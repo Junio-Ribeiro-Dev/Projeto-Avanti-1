@@ -1,0 +1,858 @@
+/* telas grandes */
+
+@media screen and (max-width: 1520px) {
+  .menu-i nav ul {
+    list-style-type: none;
+    gap: 10px;
+  }
+}
+
+/* telas medianas */
+
+@media screen and (max-width: 1024px) {
+  .interface {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  /* section header */
+  .interface .menu .menu-i {
+    width: 1024px;
+  }
+
+  .menu-i nav ul {
+    gap: 2px;
+  }
+
+  .menu-i nav ul a {
+    font-size: 11px;
+  }
+
+  .dropdown-menu {
+    min-width: 150px;
+  }
+  .dropdown-content {
+    width: 830px;
+
+    margin-left: 150px;
+  }
+
+  /* section banner */
+  section .fundo-banner .img-banner {
+    width: 70%;
+  }
+
+  section .fundo-banner .textos-banner {
+    margin-left: -100px;
+  }
+
+  section .fundo-banner .txt-banner h2 {
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+
+  section .fundo-banner .txt-banner span {
+    font-weight: 200;
+    font-size: 60px;
+  }
+
+  section .fundo-banner .txt-banner .banner-it {
+    font-size: 14px;
+
+    letter-spacing: 5px;
+  }
+
+  section .fundo-banner .txt-banner .banner-it span {
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+
+  /* carrossel */
+  section.oferta {
+    width: 900px;
+  }
+
+  /* caneca */
+
+  .conteudo-c .img-caneca img {
+    width: 523px;
+    height: 528px;
+  }
+
+  .interface .conteudo-c .txt-caneca p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  /* Contato */
+  .contato .txt-contato {
+    font-size: 20px;
+  }
+  .cad .conteudo-cad {
+    width: 1000px;
+  }
+
+  .cad .conteudo-cad input {
+    height: 38px;
+    width: 180px;
+    border-radius: 8px;
+    border: none;
+
+    padding-left: 5px;
+  }
+
+  .cad .conteudo-cad .check {
+    width: 10px;
+    height: 10px;
+  }
+
+  .cad .conteudo-cad p {
+    font-weight: 700;
+    font-size: 10px;
+  }
+
+  .cad .conteudo-cad span {
+    font-size: 10px;
+  }
+
+  .cad .conteudo-cad .cad-button {
+    width: 100px;
+    font-size: 12px;
+  }
+  /* Footer */
+
+  footer {
+    margin-top: 67px;
+  }
+
+  .conteudo-F {
+    width: 900px;
+  }
+
+  .horario {
+    font-size: 10px;
+  }
+
+  .txt-F .txt-F1 {
+    width: 1000px;
+  }
+}
+
+/* telas pequenas */
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .interface {
+    max-width: 900px;
+  }
+
+  /* menu mobile */
+  #btn-mobile {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  /* //menu mobile */
+
+  #nav.active #menu {
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    margin-left: 170px;
+  }
+
+  .gradiente {
+    display: none;
+  }
+
+  /* estilização de menu */
+
+  header .interface .oferta p {
+    display: block;
+    font-size: 12px;
+  }
+
+  header .interface .oferta span {
+    font-size: 12px;
+  }
+
+  header .interface .menu {
+    height: 128px;
+  }
+
+  .menu-S img {
+    position: absolute;
+    margin-bottom: 10%;
+  }
+
+  .interface .menu .menu-S input {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 361px;
+    height: 40px;
+    margin-left: 30%;
+  }
+  .interface .menu .menu-S .login .icn-pessoa,
+  p {
+    display: none;
+  }
+
+  .interface .menu .menu-i {
+    display: none;
+  }
+
+  .interface .menu .menu-S .lupa {
+    position: relative;
+    margin-left: 500px;
+    padding-bottom: 40px;
+    z-index: 999999999999999999;
+  }
+
+  .logocarrinho {
+    margin-right: 20%;
+    top: 80px;
+  }
+
+  /* section banner */
+  section .fundo-banner .img-banner {
+    width: 100%;
+    margin-left: -200px;
+  }
+
+  /* carrossel */
+  section.oferta {
+    width: 600px;
+  }
+
+  /* caneca */
+  .caneca {
+    height: auto;
+  }
+
+  .conteudo-c .img-caneca {
+    width: 100%;
+  }
+
+  .interface .conteudo-c {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conteudo-c .img-caneca img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .interface .conteudo-c .txt-caneca {
+    width: 490px;
+    height: 700px;
+  }
+
+  .interface .conteudo-c .txt-caneca h2 {
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .interface .conteudo-c .txt-caneca p {
+    display: flex;
+    color: #000;
+  }
+
+  /* caneca 2 */
+
+  .caneca2 {
+    height: 850px;
+    color: #000;
+    background-color: #c2c2c2;
+  }
+
+  .caneca2 .conteudo-c {
+    flex-direction: column-reverse;
+  }
+
+  .caneca2 .img-caneca img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .caneca2 .conteudo-c .img-caneca {
+    margin-top: 300px;
+  }
+
+  .geo-caneca {
+    width: 50px;
+    height: 50px;
+  }
+
+  .caneca2 .txt-caneca-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 5%;
+
+    margin: 10px 25px;
+    color: #4f4f4f;
+  }
+
+  /* contato */
+
+  .contato .contato {
+    max-width: 900px;
+  }
+
+  .contato .txt-contato {
+    font-size: 20px;
+  }
+  .contato .txt-contato p {
+    display: block;
+  }
+
+  .cad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 64px;
+  }
+
+  .cad .titulo-cad p {
+    display: block;
+  }
+
+  .cad .conteudo-cad {
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .cad .conteudo-cad input {
+    height: 48px;
+    width: 200px;
+    padding-left: 5px;
+  }
+
+  .cad .conteudo-cad .check {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cad .conteudo-cad p {
+    display: block;
+    font-size: 10px;
+  }
+
+  .cad .conteudo-cad span {
+    display: block;
+    font-size: 10px;
+  }
+
+  .cad .conteudo-cad .cad-button {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  /* Footer */
+
+  .conteudo-F {
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .txt-F {
+    width: 100%;
+    height: 211px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .txt-F .txt-F1 {
+    width: 750px;
+
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .txt-F .txt-F1 p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .interface {
+    max-width: 390px;
+  }
+
+  /* menu mobile */
+  #btn-mobile {
+    display: block;
+    position: relative;
+    top: -75px;
+    left: 5px;
+    font-size: 40px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  /* //menu mobile */
+
+  /* estilização de menu */
+
+  header .interface .oferta {
+    height: 52px;
+  }
+  header .interface .oferta p {
+    display: block;
+    margin-top: 3px;
+    padding: 5px 0;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  header .interface .oferta span {
+    font-size: 12px;
+  }
+
+  header .interface .menu {
+    height: 128px;
+  }
+
+  .menu-S .logo {
+    width: 148px;
+    height: 26px;
+    position: absolute;
+    top: 80px;
+    margin: 0 auto;
+  }
+
+  .interface .menu .menu-S input {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 361px;
+    height: 40px;
+    margin-left: -20px;
+  }
+  .interface .menu .menu-S .login .icn-pessoa,
+  p {
+    display: none;
+  }
+
+  .interface .menu .menu-i {
+    display: none;
+  }
+
+  .interface .menu .menu-S .lupa {
+    position: relative;
+    margin-left: 320px;
+    padding-bottom: 40px;
+    z-index: 999999999999999999;
+  }
+
+  .logocarrinho {
+    position: relative;
+    right: 45px;
+    top: -50px;
+  }
+
+  /* section banner */
+
+  section .fundo-banner .img-banner {
+    width: 100%;
+    margin-left: 0;
+  }
+  .img-banner img {
+    margin-left: -400px;
+  }
+
+  .textos-banner {
+    position: relative;
+    width: 140px;
+    top: -120px;
+    left: -40px;
+    text-align: center;
+  }
+
+  section .fundo-banner .txt-banner h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+
+  section .fundo-banner .txt-banner span {
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  section .fundo-banner .txt-banner .banner-it p {
+    width: 300px;
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #005cff;
+    margin-left: -70px;
+  }
+
+  section .fundo-banner .txt-banner .banner-it span {
+    font-size: 32px;
+    letter-spacing: 0;
+    margin-left: 20px;
+  }
+
+  /* carrossel */
+  section.oferta {
+    max-width: 390px;
+  }
+
+  /* section  carrossel*/
+
+  .carrossel .oferta-titulo {
+    max-width: 390px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #000;
+
+    margin-bottom: 20px;
+  }
+
+  .carrossel .oferta-titulo .ver {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .carrossel-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 35px;
+    padding: 20px 15px;
+    position: relative;
+  }
+
+  .card-lista .card-item .card-link {
+    width: 390px;
+  }
+
+  .card-lista .card-link .card-imagem {
+    height: 222px;
+    width: 390px;
+  }
+
+  .card-lista .card-link .txtcard {
+    font-size: 14px;
+    letter-spacing: 70%;
+  }
+
+  .card-lista .card-link .card-titulo {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+
+  .card-lista .card-link .card-titulo .preco-tx {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    margin: 5px 0;
+    color: #303030;
+  }
+
+  .card-lista .card-link .card-titulo .preco {
+    display: block;
+  }
+
+  .card-lista .card-link .card-titulo .preco-div {
+    display: block;
+  }
+
+  .card-lista .card-link .card-titulo .preco-div span {
+    display: block;
+  }
+
+  .card-lista .card-link .card-button {
+    width: 375px;
+  }
+
+  /* caneca */
+  .caneca {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .conteudo-c .img-caneca {
+    width: 100%;
+  }
+
+  .interface .conteudo-c {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conteudo-c .img-caneca img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .interface .conteudo-c .txt-caneca {
+    padding: 0 18px;
+    width: 390px;
+    height: 700px;
+  }
+
+  .interface .conteudo-c .txt-caneca h2 {
+    color: #000;
+    margin-top: 50px;
+    font-weight: 00;
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .interface .conteudo-c .txt-caneca p {
+    display: flex;
+    color: #000;
+    font-size: 14px;
+  }
+
+  /* caneca 2 */
+
+  .caneca2 {
+    height: 890px;
+    color: #000;
+    background-color: #c2c2c2;
+    margin-bottom: 20px;
+  }
+
+  .caneca2 .conteudo-c {
+    flex-direction: column-reverse;
+    height: 720px;
+  }
+
+  .caneca2 .img-caneca img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: -30px;
+  }
+
+  .caneca2 .conteudo-c .img-caneca {
+    margin-top: 50px;
+  }
+  .geo-caneca img {
+    position: relative;
+  }
+
+  .geo-caneca p {
+    position: absolute;
+    margin: 8px;
+  }
+
+  /* contato */
+
+  .contato .contato {
+    max-width: 390px;
+  }
+
+  .contato .txt-contato {
+    text-align: center;
+    font-size: 18px;
+  }
+  .contato .txt-contato p {
+    display: block;
+  }
+
+  .cad {
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 64px;
+  }
+
+  .cad .titulo-cad p {
+    display: block;
+  }
+
+  .cad .conteudo-cad {
+    height: 284px;
+    width: 360px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .cad .conteudo-cad input {
+    height: 48px;
+    width: 326px;
+    padding-left: 5px;
+    margin: 5px 0;
+  }
+
+  .cad .conteudo-cad .check {
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .cad .conteudo-cad p {
+    display: block;
+    font-size: 10px;
+  }
+
+  .cad .conteudo-cad span {
+    display: block;
+    font-size: 10px;
+  }
+
+  .cad .conteudo-cad .cad-button {
+    width: 325px;
+    font-size: 12px;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 500px;
+  }
+
+  .conteudo-F {
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .txt-F {
+    width: 100%;
+    height: 211px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .conteudo-F .fcol {
+    display: none;
+  }
+
+  .txt-F .txt-F1 {
+    width: 380px;
+    font-size: 12px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .txt-F .txt-F1 p {
+    display: block;
+  }
+  .faq{
+    display: block;
+  }
+
+
+  .faq-section {
+    max-width: 390px;
+    margin: 10px auto;
+    padding: 10px;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq-answer p {
+    display: block;
+  }
+
+  .faq-question:focus {
+    outline: none;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+
+  .faq-answer {
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+    display: none;
+  }
+
+  .faq-question.active .icon {
+    content: "-";
+  }
+
+  .apoiadores img {
+    max-width: 360px;
+  }
+}

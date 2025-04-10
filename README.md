@@ -1,0 +1,1 @@
+Nesse projeto utilizei meus conhecimentos em html css e js para criar um site responsivo dentro dos meus conhecimentos atuais.

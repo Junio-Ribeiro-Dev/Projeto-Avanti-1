@@ -1,0 +1,954 @@
+/*  estilização de Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.interface {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+:root {
+  --cor-azul: #005cff;
+  --cor-text: #000;
+}
+
+.faq{
+  display: none;
+}
+
+/* fim estilização de Geral */
+
+/* menu responsivo */
+
+#btn-mobile {
+ display: none;
+ 
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  top: 50px;
+  left: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  font-weight: 700;
+  z-index: 100000;
+}
+
+#nav.active #menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 10000;
+}
+
+#menu a{
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ////menu responsivo */
+
+/* estilização de menu */
+
+header .interface .oferta {
+  background-color: var(--cor-azul);
+  width: 100%;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+header .interface .oferta p {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+header .interface .oferta span {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+header .interface .menu {
+  width: 100%;
+  height: 118px;
+  top: 30px;
+  box-shadow: 10px 5px 5px #e7e7ea;
+}
+
+.interface .menu .menu-S {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.interface .menu .menu-S input {
+  width: 580px;
+  height: 38px;
+  border: 1px solid #e7e7ea;
+  border-radius: 10px;
+  outline: 0;
+  padding: 20px;
+}
+
+.interface .menu .menu-S input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+}
+
+.interface .menu .menu-S .lupa {
+  position: absolute;
+  margin-left: -30px;
+  z-index: 999999999999999999;
+}
+.interface .menu .menu-S .lupa:hover {
+  cursor: pointer;
+}
+
+/* pesquisa lupa */
+
+.search-container {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  z-index: 1;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Ajuste do ícone da lupa */
+.search-container i {
+  position: absolute;
+  right: 15px; 
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Estilização do resultado da busca */
+.search-result {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%; 
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 14px;
+  color: #555;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none; 
+}
+
+/*/// pesquisa lupa */
+.interface .menu .menu-S .login {
+  display: flex;
+  margin: 20px 0;
+  gap: 24px;
+}
+
+.interface .menu .menu-S .login p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: -20px;
+}
+
+.interface .menu .menu-S .login i {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+}
+
+.interface .menu .menu-S .login span {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0%;
+}
+
+/* menu inferior */
+.interface .menu .menu-i {
+  width: 100%;
+  height: 22px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-i nav ul {
+  list-style-type: none;
+  gap: 45px;
+}
+
+.menu-i nav ul a {
+  text-decoration: none;
+  color: var(--cor-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.menu-i nav ul a:hover {
+  color: var(--cor-azul);
+  font-weight: 700;
+}
+
+.interface .menu .menu-i .menu-ul-i {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interface .menu .menu-i .menu-ul-i .sp-menu {
+  font-weight: 700;
+  display: flex;
+}
+
+.interface .menu .menu-i .menu-ul-i .sp-menu i {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Estilos para o dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu i {
+  float: right;
+}
+
+.dropdown .selecionado {
+  color: var(--cor-azul);
+  font-weight: 700;
+}
+
+.menu-ul-i {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-ul-i li {
+  padding: 10px 15px;
+}
+
+.menu-ul-i li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sp-menu {
+  font-weight: bold;
+}
+/* //menu infer */
+
+/* fim estilização de menu */
+
+/* Estilos para o dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 1260px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 250px;
+  background-color: #fff;
+}
+
+.dropdown-colunas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-coluna {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.titulo-coluna {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 0;
+  color: var(--cor-azul);
+}
+
+.dropdown-content a {
+  color: #656565;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  color: #000;
+  padding-left: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+}
+
+.menu-ul-i {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-ul-i li {
+  padding: 10px 15px;
+}
+
+.menu-ul-i li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sp-menu {
+  font-weight: bold;
+}
+
+.colunaimg {
+  height: 298px;
+  width: 236px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(../imgs/xicara-frutas.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.dropdown-coluna .gradiente {
+  height: 298px;
+  width: 236px;
+  background-color: #000;
+}
+
+.dropdown-coluna .colunaimg p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: -0.5%;
+  color: #ffffff;
+}
+
+.dropdown-coluna .colunaimg span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+
+.dropdown-coluna .colunaimg button {
+  width: 116px;
+  height: 38px;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ------------------------------------------------------------ESTILO SECTION BANNER------------------------------------------------------------------------ */
+
+section .fundo-banner {
+  margin-top: 6px;
+  background-color: #eaebed;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .fundo-banner div {
+  margin: 0 20px;
+}
+
+section .fundo-banner .img-banner {
+  height: 100%;
+}
+
+section .fundo-banner .txt-banner h2 {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+section .fundo-banner .txt-banner span {
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+section .fundo-banner .txt-banner .banner-it {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #005cff;
+  margin-left: -1px;
+  margin: 10px 0;
+}
+
+section .fundo-banner .txt-banner .banner-it span {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-left: 150px;
+}
+
+/* section  carrossel*/
+
+section.oferta {
+  margin: 20px auto;
+  width: 1290px;
+  height: 480px;
+  background-color: #ffffff;
+}
+.carrossel .oferta-titulo {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #000;
+
+  margin-bottom: 20px;
+}
+
+.carrossel .oferta-titulo .ver {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.carrossel-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 35px;
+  padding: 20px 15px;
+  position: relative;
+}
+
+.carrossel-lista {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carrossel-item {
+  scroll-snap-align: start;
+  flex: 0 0 240px;
+}
+
+.card-lista .card-item .card-link {
+  height: 410px;
+  width: 240px;
+  user-select: none;
+  display: block;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid #e7e7ea;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-lista .card-link .card-imagem {
+  height: 222px;
+  width: 222px;
+}
+
+.card-lista .card-link .txtcard {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+
+  color: #303030;
+}
+
+.card-lista .card-link .card-titulo {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+
+  margin: 10px 0;
+}
+
+.card-lista .card-link .card-titulo .preco-tx {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  text-decoration: line-through;
+
+  margin: 5px 0;
+  color: #303030;
+}
+
+.card-lista .card-link .card-titulo .preco {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  margin: 10px 0;
+  color: #000;
+}
+
+.card-lista .card-link .card-titulo .preco-div {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #303030;
+}
+
+.card-lista .card-link .card-titulo .preco-div span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000;
+}
+
+.card-lista .card-link .card-button {
+  width: 222px;
+  height: 40px;
+  gap: 10px;
+
+  margin-top: 20px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+
+  background-color: #005cff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+/* Navegação do carrossel */
+.swiper-pagination-bullet {
+  background-color: var(--cor-texto);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--cor-azul);
+  border: 1px solid var(--cor-azul);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+
+/* caneca */
+
+.caneca {
+  height: 55vh;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.interface .conteudo-c {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-c div {
+  margin: 0 20px;
+}
+
+.conteudo-c .img-caneca {
+  background-color: #c2c2c2;
+  width: 650px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-c .img-caneca img {
+  width: 523px;
+  height: 528px;
+}
+
+.interface .conteudo-c .txt-caneca {
+  width: 490px;
+}
+
+.interface .conteudo-c .txt-caneca h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.interface .conteudo-c .txt-caneca p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 5%;
+}
+
+/* caneca 2 */
+
+.caneca2 {
+  background-color: #dedede;
+  margin-bottom: 50px;
+  height: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caneca2 h2 {
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.caneca2 .txt-caneca-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 5%;
+
+  margin: 10px 25px;
+  color: #4f4f4f;
+}
+
+.caneca2 .txt-caneca-icon img {
+  width: 90px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+.caneca2 .img-caneca img {
+  width: 652px;
+  height: 728px;
+}
+
+/*-------------------  section contato---------------------------------------- */
+
+.contato .contato {
+  width: 100%;
+  height: 660px;
+  background: url(../imgs/image\ -contato.svg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato .txt-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 132px;
+  background-color: #005cff;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+
+.cad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+.cad .titulo-cad {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.cad .titulo-cad span {
+  color: #005cff;
+}
+
+.cad .conteudo-cad {
+  background-color: #dedede;
+  width: 1260px;
+  height: 176px;
+  padding: 0 115px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+  margin-top: 54px;
+
+  border-radius: 8px;
+}
+
+.cad .conteudo-cad input {
+  background-color: #fff;
+  height: 48px;
+  width: 280px;
+  border-radius: 8px;
+  border: none;
+
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  color: #303030;
+}
+
+.cad .conteudo-cad .check {
+  width: 15px;
+  height: 15px;
+}
+
+.cad .conteudo-cad p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #656565;
+  margin-left: -20px;
+}
+
+.cad .conteudo-cad span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+
+  text-decoration-thickness: 0%;
+  color: #656565;
+}
+
+.cad .conteudo-cad .cad-button {
+  margin: 0;
+  width: 121px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #005cff;
+  color: #fff;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+/*-------------------  section Footer---------------------------------------- */
+
+footer {
+  height: 386px;
+  margin-top: 267px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-F {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer img {
+  width: 152px;
+  height: 27px;
+  margin-bottom: 40px;
+}
+
+footer .F-sociais i {
+  height: 26px;
+  color: #005cff;
+  margin-right: 30px;
+}
+
+.fcol h4 {
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-bottom: 11px;
+}
+
+.fcol h5 {
+  color: #303030;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.fcol h5 span {
+  font-weight: 700;
+}
+
+footer .apoiadores {
+  height: 24px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt-F {
+  width: 100%;
+  height: 211px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.txt-F .txt-F1 {
+  width: 1074px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 40px;
+}
