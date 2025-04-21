@@ -40,7 +40,7 @@ new Swiper('.card-container', {
             slidesPerView: 1
         },
         390:{
-            slidesPerView: 1
+            slidesPerView: 2
         },
         768:{
             slidesPerView: 2

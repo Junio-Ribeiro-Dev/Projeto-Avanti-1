@@ -531,7 +531,9 @@
 
   /* carrossel */
   section.oferta {
+  
     max-width: 390px;
+
   }
 
   /* section  carrossel*/
@@ -559,19 +561,19 @@
 
   .carrossel-container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 390px;
     margin: 0 auto 35px;
-    padding: 20px 15px;
+    padding: 6px 5px;
     position: relative;
   }
 
   .card-lista .card-item .card-link {
-    width: 390px;
+    width: 180px;
   }
 
   .card-lista .card-link .card-imagem {
-    height: 222px;
-    width: 390px;
+    height: 180px;
+    width: 150px;
   }
 
   .card-lista .card-link .txtcard {
@@ -608,8 +610,20 @@
   }
 
   .card-lista .card-link .card-button {
-    width: 375px;
+    width: 160px;
   }
+
+/* Navegação do carrossel */
+
+.swiper-button-next,
+.swiper-button-prev {
+
+display: none;
+}
+
+
+
+
 
   /* caneca */
   .caneca {
@@ -731,6 +745,7 @@
     height: 16px;
     border: none;
     border-radius: 5px;
+    
   }
 
   .cad .conteudo-cad p {
@@ -848,6 +863,8 @@
     display: none;
   }
 
+
+
   .faq-question.active .icon {
     content: "-";
   }
@@ -855,4 +872,6 @@
   .apoiadores img {
     max-width: 360px;
   }
+
+ 
 }
